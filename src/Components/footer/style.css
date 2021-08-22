@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.footer{
+    background-color: rgb(255, 94, 0);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    width: 90vw;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(46, 45, 45, 0.658);
+}
+.abt{
+    width: 20vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 30vh;
+}
+.abt>p{
+    color:rgba(0, 0, 0, 0.781);
+    font-weight: bold;
+}
+.cities{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    
+
+}
+.cities>ul{
+    display: flex;
+    flex-direction: column;
+    color:rgba(0, 0, 0, 0.781);
+    font-weight: bold;
+    
+}
+
+.contact{
+  
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 25vw;
+        height: 30vh;
+}
+
+.contact>ul{
+    display: flex;
+    flex-direction: row;
+   
+}
+.contact>ul>li{
+    padding: 0px .5vw;
+}
+img:hover{
+   transform: rotate(360deg);
+   transition: 1s;
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90vw;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(46, 45, 45, 0.658);
+    font-size: 1vh;
+}
+
+.abt>p {
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: bold;
+    font-size: 1vh;
+}
+  }

@@ -1,0 +1,52 @@
+.restaurants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    flex-direction: column;
+    color:white;
+
+
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70vw;
+    flex-wrap: wrap;
+}
+
+.restaurant{   
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 20vh;
+    
+    
+}
+.restaurant>h1{
+    font-size: 3vw;
+    letter-spacing: .2vw;
+
+}
+
+.HIGH{
+    color: orangered;
+    text-decoration-line: underline;
+    font-size: 3vw;
+
+}
+
+.cardd{
+    width: 30vh;
+    height: 30vh;
+}
+.media{
+    width: 30vw;
+    height: 30vh;
+}
