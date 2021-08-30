@@ -2,7 +2,6 @@
 
 .admin{
     width: 100vw;
-    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +9,7 @@
     align-items: center;
     color:white;
     font-family: 'Poppins', sans-serif;
-
+ 
 }
 
 .form{
@@ -46,3 +45,39 @@ button{
 
 
 }
+.headd{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.imggg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.boddy{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 70vw;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 5vh;
+}
+input[type='file']{
+    color:blue;
+    font-size:25px;
+    display:none;
+  }
+
+  .labell{
+      margin: 2vh 0vh;
+      background-color: red;
+      color:white;
+      padding: 1vh 2vh;
+      border-radius: 1vh;
+  }

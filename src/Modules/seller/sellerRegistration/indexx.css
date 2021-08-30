@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.admin{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+.form>input{
+    margin:5px;
+    background-color: rgb(252, 252, 252);
+    padding: 5px 10px;
+    font-size: 1.5vw;
+    outline: none;
+    border:none;
+}
+input::placeholder{
+    color:rgba(22, 21, 21, 0.452);
+}
+button{
+
+    padding:15px 30px;
+    background-color: orangered;
+    border:none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    border-radius: 1vw;
+    margin-top: 10px;
+
+
+}
+.headd{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.imggg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.boddy{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 90vw;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 5vh;
+    flex-direction: column;
+}
+input[type='file']{
+    color:blue;
+    font-size:25px;
+    display:none;
+  }
+
+  .labell{
+      margin: 2vh 0vh;
+      background-color: red;
+      color:white;
+      padding: 1vh 2vh;
+      border-radius: 1vh;
+  }

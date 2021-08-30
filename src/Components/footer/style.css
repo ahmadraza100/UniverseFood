@@ -66,10 +66,12 @@
 .contact>ul>li{
     padding: 0px .5vw;
 }
-img:hover{
-   transform: rotate(360deg);
+img{
+   transform: rotate(0deg);
    transition: 1s;
+
 }
+
 
 
 @media only screen and (max-width: 600px) {

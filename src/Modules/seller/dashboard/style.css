@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.dash{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    flex-wrap: wrap;
+
+    
+
+}
+.roott{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    flex-direction: column;
+   
+    
+
+}
+
+
+.roott>h1{
+    font-size: 7vh;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10vh;
+
+}

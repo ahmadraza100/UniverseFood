@@ -1,0 +1,8 @@
+*{
+  scroll-behavior: smooth;
+  scrollbar-color:black;
+
+}
+.scrollable-element {
+  scrollbar-color: dark;
+}

@@ -43,16 +43,16 @@ function Footer() {
         <div className="contact"> 
           <h1>Contact Us</h1>
           <ul>
-            <li><a href="https://www.facebook.com/M.Ahmadshafiie" target="_blank"><img src={F} alt="img" style={{height:"2vw" , width:"2vw"}}/></a></li>
-            <li><a href="https://instagram.com/iam_ahmademi" target="_blank"><img src={I} alt="img"style={{height:"2vw" , width:"2vw"}} /></a></li>
-            <li><a href="https://linkedin.com/in/ahmadraza100" target="_blank"><img src={L} alt="img"style={{height:"2vw" , width:"2vw"}} /></a></li>
-            <li><a href="https://twitter.com/SunBhaiAhmad" target="_blank"><img src={T} alt="img"style={{height:"2vw" , width:"2vw"}} /></a></li>
+            <li><a href="https://www.facebook.com/M.Ahmadshafiie"  rel="noreferrer" target="_blank"><img src={F} alt="img" style={{height:"2vw" , width:"2vw"}}/></a></li>
+            <li><a href="https://instagram.com/iam_ahmademi" rel="noreferrer"  target="_blank"><img src={I} alt="img"style={{height:"2vw" , width:"2vw"}} /></a></li>
+            <li><a href="https://linkedin.com/in/ahmadraza100" rel="noreferrer"  target="_blank"><img src={L} alt="img"style={{height:"2vw" , width:"2vw"}} /></a></li>
+            <li><a href="https://twitter.com/SunBhaiAhmad" rel="noreferrer"  target="_blank"><img src={T} alt="img"style={{height:"2vw" , width:"2vw"}} /></a></li>
             </ul>
         </div>
       </div>
      
      <div>
-       <h4>Made with ❤️  BY <a href="https://instagram.com/iam_ahmademi"  target="_blank" style={{textDecoration:"none" , color:"red"}}>Ahmad &#174;</a></h4>
+       <h4>Made with ❤️  BY <a href="https://instagram.com/iam_ahmademi" rel="noreferrer" target="_blank" style={{textDecoration:"none" , color:"red"}}>Ahmad &#174;</a></h4>
      </div>
  
     </div>

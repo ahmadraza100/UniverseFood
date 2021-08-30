@@ -81,6 +81,65 @@ color:black
     font-family: 'Nunito', sans-serif;
 }
 
+.buttonn{
+    cursor: pointer;
+    background-color: red;
+    border-radius: 1vw;
+    padding: 1vh 2vh;
+    font-size: 1.5vh;
+    color:white;
+}
+
+.cardprofile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:10vh;
+    right: 5vw;
+    background: rgb(235,81,15);
+    background: linear-gradient(90deg, rgba(235,81,15,1) 0%, rgba(3,96,223,1) 0%, rgba(255,0,0,1) 100%);
+    height: 35vh;
+    width: 35vh;
+    z-index: 1000;
+    flex-direction: column;
+    border-radius: 1vw;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0), -8px -8px 10px rgb(0, 0, 0);
+
+}
+
+.Profilee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-bottom: 1px solid orange;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+.location>h4{
+    background-color: black;
+    margin: 10px 20px;
+    padding: 5px 10px;
+    border-radius: 1vw ;
+    transition: .7s;
+    cursor: pointer;
+}
+.location>h4:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: .7s;
+
+}
+
 
 
 
@@ -115,12 +174,22 @@ color:black
         flex-direction: row;
         width: 85vw;
         background-color: rgb(255, 255, 255);
-        height: 10vh;
+        height: 7vh;
         border-radius: 0px 0px 1.5vw 1.5vw;
         color: #1f1e1e;
         font-family: 'Nunito', sans-serif;
         box-shadow: 1px 2px 5px rgb(255 115 0);
     }
+    .buttonn{
+        cursor: pointer;
+        background-color: red;
+        border-radius: 1vw;
+        padding: .3vh .9vh;
+        font-size: 1vh;
+        color:white;
+    }
+    
+    
     
         
   }
