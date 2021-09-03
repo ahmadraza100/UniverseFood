@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.downloadd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 5vh;
+    height:60vh;
+    background-image: url("https://www.bssnews.net/assets/news_photos/2021/06/24/image-1223-1624542765.jpg");
+    background-position: center center;
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    color:white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid black;
+}
+
+.bt{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    margin-top: 5vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}

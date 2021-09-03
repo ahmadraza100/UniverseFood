@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .home {
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
-   flex-direction: row;
+    height: 80vh;
+    flex-direction: row;
     width: 80vw;
     font-family: 'Staatliches', cursive;
     font-size: 3vw;
-    color:rgb(245, 229, 229);
-
+    color: rgb(245, 229, 229);
 }
 
 .color{
@@ -22,14 +19,22 @@
 @media only screen and (max-width: 600px) {
     .home {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40vh;
+        justify-content: center;
+        align-items: flex-end;
+        /* height: 40vh; */
         flex-direction: row;
         width: 80vw;
+        flex-wrap: wrap;
         font-family: 'Staatliches', cursive;
         font-size: 3vw;
         color: rgb(245, 229, 229);
+    }
+    .home>h1 {
+        font-size: 6vh;
+    }
+    .home>img {
+       height: 30vh;
+       width: 30vh;
     }
     
     

@@ -7,11 +7,12 @@ import Restaurant from "./Modules/Home/Restaurants/index"
 import Footer from "./Components/footer/index"
 import Signup from "./Modules/Admin/signup/index"
 import Signin from "./Modules/Admin/signin/index"
-import Seller from "./Modules/seller/sellerRegistration/index"
 import PrivateRoute from "./Components/Routing/privateRoute"
 import PublicRoute from "./Components/Routing/publicRoute"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Main from './Modules/seller/mainpage';
+import Download from "./Modules/Home/Download/index" 
+import Details from "./Modules/ProductPage/ProductDetails/index"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+        <Route exact path="/details" component={Details} />
         <PrivateRoute component={Main}  exact path="/dashboard" /> 
         <PublicRoute restricted={true} component={Signin} exact path="/signin" />
         <PublicRoute restricted={true} component={Signup} exact path="/signup" />
@@ -29,9 +31,14 @@ function App() {
         <Home />
         <About />
         <Restaurant />
+        <Download/>
         </Route>
+        <Footer />
+       
         </Switch>
         <Footer />
+        
+
 
 
 

@@ -1,11 +1,10 @@
 import React from 'react'
 import Avatar from '@material-ui/core/Avatar';
-import avatar from "./avatar.jpg"
 import "./style.css"
 import {Link} from "react-router-dom"
 import {useSelector} from "react-redux"
 import ReviewCard from "./profileCard"
-import { Hotel } from '@material-ui/icons';
+
 
 function Header() {
     const userLocal = JSON.parse(localStorage.getItem('user')); 
@@ -26,7 +25,7 @@ function Header() {
         <div className="header">
             <h1>FoodUniverse</h1>
             <ul className="list">
-               <Link to="/" className="link"> <li>Home</li></Link> 
+                <li><Link to="/" className="link">Home</Link></li>
                 <li> <a href='#Menu'>Menu</a> </li>
                 <li><a href='#Footer'>Contact US</a></li>
                 {

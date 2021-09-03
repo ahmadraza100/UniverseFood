@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.dash{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    flex-wrap: wrap;
+  
+
+    
+
+}
+.roottt{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    flex-direction: column;
+    margin-top: 15vh;
+
+   
+}
+.rootttt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+
+    border-radius: 5vh;
+}
+
+
+.roottt>h1{
+    font-size: 10vh;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 5vh;
+    color: white;
+
+}
+
+.rootttt>h1{
+    background-color:rgb(253, 1, 1);
+    color: rgb(255, 254, 254);
+    padding: 1vw 2vw;
+    border-radius: 3vh;
+    transition: .7s;
+    cursor: pointer;
+}
+.rootttt>h1:hover{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1vw 2vw;
+    border-radius: 3vh;
+    transition: .7s;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    flex-wrap: wrap;  
+    flex-direction: column;  
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10vh;
+    color: rgb(255, 72, 0);
+    
+    
+}
+.Productt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.coverr{
+  margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 80vw;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.info{
+    font-family: 'Nunito', sans-serif;
+  
+    background: rgb(235,81,15);
+    background: linear-gradient(90deg, rgba(235,81,15,1) 0%, rgba(223,58,3,1) 0%, rgba(255,106,0,1) 100%);
+    color: rgb(255, 255, 255);
+   padding:2vw 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    border-bottom-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    margin-top: 5vh;
+    font-size: 2vh;
+}
+
+.info>h1{
+    font-size: 3vh;
+    color: black;
+    font-weight: bold;
+}

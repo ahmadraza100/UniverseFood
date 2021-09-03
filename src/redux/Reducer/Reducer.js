@@ -7,6 +7,7 @@ const initialState = {
   User: null,
   Profile:"",
   restaurant:null,
+  dishes:null,
   restaurants:null
 
  }
@@ -61,9 +62,12 @@ function AuthReducer(state=initialState, action) {
 
                 return {
                 ...state,
-                restaurant:action.payload
+                restaurant:action.payload.restaurant,
+                dishes:action.payload.dish
                 };
             }
+
+
             case "NewRestaurant":{
                 return {
                 ...state,

@@ -163,7 +163,7 @@ function Admin() {
                     }
                 </div>
             </div>
-            <Button onClick={() => handleSubmit()} variant="contained" color="primary"> SUBMIT </Button>
+            <Button onClick={() => handleSubmit()} variant="contained" color="primary"  style={{marginTop:"2vh"}}> SUBMIT </Button>
             <p>already have an account? <Link to="/signin">SignIn</Link></p>
 
 

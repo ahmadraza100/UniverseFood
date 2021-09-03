@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
-    width:350,
+    width:300,
     height:150,
     flexDirection:"row",
     margin:"1vw",
@@ -35,14 +35,15 @@ const useStyles = makeStyles(() => ({
     alignItems:"center",
   },
   cover: {
-    width: 150,
+    width: 100,
     height:150
   },
   button:{
       backgroundColor:"black",
       padding:".3vw .8vw",
       borderRadius:".5vw",
-      fontSize:15
+      fontSize:15,
+      cursor:"pointer"
      
 
   },

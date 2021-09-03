@@ -22,6 +22,7 @@ export const MakeRestaurants = (data) => async (dispatch) => {
 
 
 
+
 export const FetchRestaurant = () => async (dispatch) => {
     try {
       var user = JSON.parse(localStorage.getItem('info'));
@@ -35,10 +36,35 @@ export const FetchRestaurant = () => async (dispatch) => {
         })
         return data
       })
-      if(restaurant){   
+
+   const res = await db.collection("restaurants").get().then((restaurants) => {
+    let data;
+      restaurants.forEach((val) => {
+        if (user.uid === val.data().ouid) {
+          data = val.id
+        }
+
+      })
+      return data
+    })
+
+     let dishes = await db.collection("restaurants").doc(res).collection("products").get().then((items) => {
+      let data = [];
+      items.forEach((val) => {
+          data.push(val.data().dat)
+      })
+      return data
+  })
+      if(restaurant){  
+       let dashboard={
+         restaurant:restaurant,
+         dish:dishes
+       }
+
+       
         dispatch({
           type:"FetchRestaurant",
-          payload:restaurant
+          payload:dashboard
         });
       }
       }
@@ -48,10 +74,68 @@ export const FetchRestaurant = () => async (dispatch) => {
     }
   };
 
+
+  
+export const Details = (param) => async (dispatch) => {
+  try {
+
+
+    const restaurant = await db.collection("restaurants").get().then((restaurants) => {
+      let data;
+      restaurants.forEach((val) => {
+        if (param === val.data().ouid) {
+          data = val.data()
+        }
+
+      })
+      return data
+    })
+
+ const res = await db.collection("restaurants").get().then((restaurants) => {
+  let data;
+    restaurants.forEach((val) => {
+      if (param=== val.data().ouid) {
+        data = val.id
+      }
+
+    })
+    return data
+  })
+
+   let dishes = await db.collection("restaurants").doc(res).collection("products").get().then((items) => {
+    let data = [];
+    items.forEach((val) => {
+        data.push(val.data().dat)
+    })
+    return data
+})
+    if(restaurant){ 
+      let dashboard={
+        restaurant:restaurant,
+        dish:dishes
+      }
+      
+  
+     
+      dispatch({
+        type:"FetchRestaurant",
+        payload:dashboard
+      });
+    }
+    }
+   catch (error) {
+    alert(JSON.stringify(error))
+    console.log("error", error);
+  }
+};
+
+
   
 export const FetchRestaurants = () => async (dispatch) => {
   try {
-    var user = JSON.parse(localStorage.getItem('info'));
+
+
+
     const restaurant = await db.collection("restaurants").get().then((restaurants) => {
       let data =[];
       restaurants.forEach((val) => {
@@ -75,6 +159,8 @@ export const FetchRestaurants = () => async (dispatch) => {
 };
 
   
+
+// AddDish
 
 export const AddDish = (dat) => async (dispatch) => {
   try {
@@ -110,3 +196,4 @@ export const AddDish = (dat) => async (dispatch) => {
     console.log("error", error);
   }
 };
+

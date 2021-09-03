@@ -5,10 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     color:white;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 10vh;
  
 }
 
@@ -60,13 +62,14 @@ button{
     flex-direction: column;
 
 }
-.boddy{
+.boddy {
     display: flex;
     justify-content: space-around;
-    align-items:center;
-    width: 70vw;
+    align-items: center;
+    width: 90vw;
     flex-wrap: wrap-reverse;
     margin-bottom: 5vh;
+    flex-direction: row;
 }
 input[type='file']{
     color:blue;

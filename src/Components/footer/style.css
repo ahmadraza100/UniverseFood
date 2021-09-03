@@ -9,7 +9,6 @@
     height: 40vh;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 10vh;
     flex-wrap: wrap;
 }
 
@@ -74,23 +73,102 @@ img{
 
 
 
-@media only screen and (max-width: 600px) {
-   
-.top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 90vw;
-    flex-direction: row;
-    border-bottom: 1px solid rgba(46, 45, 45, 0.658);
-    font-size: 1vh;
-}
+@media only screen and (max-width: 700px) {
 
+    .footer {
+        background-color: rgb(255, 94, 0);
+        color: rgb(255, 255, 255);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        /* height: 40vh; */
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        flex-wrap: wrap;
+        height: 85vh;
+    }
+   
+    .top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+        /* width: 90vw; */
+        /* flex-direction: row; */
+        border-bottom: 1px solid rgba(46, 45, 45, 0.658);
+        font-size: 1vh;
+        height: 79vh;
+    }
+    .cities {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        height: 21vh;
+    }
+
+    .cities {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        height: 20vh;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 5vh;
+    }
+    .abt {
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 2vh;
+        height: 18vh;
+    }
 .abt>p {
     color: rgba(0, 0, 0, 0.781);
     font-weight: bold;
     font-size: 1vh;
+}
+
+.cities>ul {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: bold;
+    font-size: 2vh;
+}
+.cities {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    height: 24vh;
+}
+.abt>h1{
+    font-size: 3vh;
+}
+.cities>h1{
+    font-size: 3vh;
+}
+.contact>h1{
+    font-size: 3vh;
+}
+.abt>p {
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: bold;
+    font-size: 1.7vh;
+}
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
 }
   }

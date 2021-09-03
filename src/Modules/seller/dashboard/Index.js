@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import {AddDish} from "../../../redux/Action/restaurantActions"
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import Avatar from '@material-ui/core/Avatar';
+import ControlCard from "./card"
 
 
 
@@ -124,6 +125,7 @@ function Dashboard() {
     }
 
 
+ 
     return (
         <div className="roott">
             <h1>Welcome to {hotel.restaurant.restaurant} </h1>
@@ -146,9 +148,18 @@ function Dashboard() {
                 <TextField style={{ backgroundColor: "white", color: "green" }} value={Phone} onChange={(e) => setPhone(e.target.value)} id="filled-basic" type="number" label="EnterPrice" variant="filled" />
                 <TextField style={{ backgroundColor: "white", color: "green" }} value={Country} onChange={(e) => setCountry(e.target.value)} id="filled-basic" label="Enter Discription" variant="filled" />
             </div>
-            <Button onClick={() => handleSubmit()} variant="contained" color="primary"> Create </Button>
+            <Button onClick={() => handleSubmit()} variant="contained" color="primary" style={{marginTop:"2vh"}}> Add Product </Button>
             
             </div>
+           
+            </div>
+                <h1>Products</h1>
+            <div className="productss">
+                {
+                  (hotel.dishes)?hotel.dishes.map((dish)=>{
+                      return <ControlCard Data = {dish}/>
+                  }):""
+                }
             </div>
         </div >
     )

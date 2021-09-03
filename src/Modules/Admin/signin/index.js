@@ -66,7 +66,7 @@ function Login() {
     return (
         <div className="signin">
             <div className="headd">
-              <h1>SignIn</h1>
+              <h1>Sign-In</h1>
                 <p>Enter the Information below to Sign In </p>
 
             </div>
@@ -75,9 +75,9 @@ function Login() {
             <div className={classes.root}>
  
                 <TextField value={Email} onChange={(e) => setEmail(e.target.value)} id="filled-basic" label="Enter Email" variant="filled" />
-                <TextField value={Password} onChange={(e) => setPassword(e.target.value)} id="filled-basic" label="Enter your Password" variant="filled" />
+                <TextField value={Password} onChange={(e) => setPassword(e.target.value)} type="password" id="filled-basic" label="Enter your Password" variant="filled" />
 
-                <Button onClick={handleSubmit } variant="contained" color="primary"> SUBMIT </Button>
+                <Button onClick={handleSubmit } variant="contained" color="primary"  style={{marginTop:"2vh"}}> SUBMIT </Button>
             </div>
 
                 <p>Dont have an account? <Link to="/signup">Signup</Link></p>

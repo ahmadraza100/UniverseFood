@@ -136,7 +136,7 @@ function Admin() {
                 <p>Enter the Information below to Register </p>
 
             </div>
-            <div className="boddy">
+            <div className="bod">
             <div>
                     {
                         (URL===0)?<div className="imggg"><img src="https://images.all-free-download.com/images/graphiclarge/restaurant_exterior_drawing_cook_diners_icons_colored_cartoon_6834113.jpg" alt="img" style={{height:"25vh" , width:"50vh" , borderRadius:"2vh" , marginBottom:"2vh"}}/>
@@ -153,7 +153,7 @@ function Admin() {
                 </div>
               
             </div>
-            <Button onClick={() => handleSubmit()} variant="contained" color="primary"> Create </Button>
+            <Button onClick={() => handleSubmit()} variant="contained" color="primary"  style={{marginTop:"2vh"}}> Create </Button>
 
         </div>
     )

@@ -7,8 +7,13 @@ import "./index.css"
 function About() {
     return (
         <div className="about">
+
+            <div className="abtt">
             <h4>What We Serve</h4>
             <h1>Your Favorite Food <br /> Delivery Partner</h1>
+
+
+            </div>
 
             <div className="services">
                 <div className="cards">

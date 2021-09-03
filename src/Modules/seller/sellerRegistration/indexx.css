@@ -9,6 +9,8 @@
     align-items: center;
     color:white;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 10vh;
  
 }
 
@@ -60,7 +62,7 @@ button{
     flex-direction: column;
 
 }
-.boddy{
+.bod{
     display: flex;
     justify-content: center;
     align-items:center;

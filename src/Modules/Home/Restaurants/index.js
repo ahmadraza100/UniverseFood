@@ -15,9 +15,7 @@ function Restaurant() {
         setflag(false)
     }
 
-    setTimeout(() => {
-        console.log(hotel)
-    }, 3000);
+  
 
 
     return (
@@ -27,7 +25,7 @@ function Restaurant() {
             </div>
             <div className="card">
                 {
-                (hotel.restaurants!==null)?hotel.restaurants.map(element => {
+                (hotel.restaurants!==null)?hotel.restaurants.map((element) => {
                     return (element!==undefined)?<MediaCard Data={element} />:<CircularProgress/>
                 }):<CircularProgress/>
                 }
